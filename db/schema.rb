@@ -10,22 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_14_135843) do
+ActiveRecord::Schema.define(version: 2022_10_20_004026) do
 
   create_table "transactions", force: :cascade do |t|
     t.string "name"
     t.integer "amount"
-    t.string "date"
     t.string "category"
     t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.integer "age"
+    t.string "username"
     t.string "email"
-    t.string "password"
+    t.string "password_digest"
+    t.integer "hourly_rate"
   end
 
 end
