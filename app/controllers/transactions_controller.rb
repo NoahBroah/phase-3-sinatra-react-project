@@ -1,7 +1,7 @@
 class TransactionsController < ApplicationController
-    get "/transactions" do
-        transactions = Transaction.all
-        transactions.to_json
+    get "/users/:id/transactions" do
+        user = User.find_by(id: params[:id])
+        user.transactions.to_json
     end
 
     # post '/users' do

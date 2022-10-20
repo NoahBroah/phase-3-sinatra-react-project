@@ -19,8 +19,8 @@ t8 = Transaction.create(name:'Subway', amount:8, category:'Food', user_id:1)
 t9 = Transaction.create(name:'Uber', amount:31, category:'Travel', user_id:1)
 t10 = Transaction.create(name:'Rent', amount:1200, category:'Utilities', user_id:1)
 t11 = Transaction.create(name:'Electricity', amount:92, category:'Utilities', user_id:1)
-t12 = Transaction.create(name:'Water', amount:101, category:'Utilities', user_id:1)
-t13 = Transaction.create(name:'Publix', amount:126, category:'Food', user_id:1)
+t12 = Transaction.create(name:'Water', amount:101, category:'Utilities', user_id:3)
+t13 = Transaction.create(name:'Publix', amount:126, category:'Food', user_id:2)
 
 
 
