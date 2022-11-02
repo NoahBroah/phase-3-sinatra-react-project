@@ -10,13 +10,12 @@ class TransactionsController < ApplicationController
     end
 
     post "/transactions" do
-        transaction = Transaction.create(
+        transaction = User.find_or_create_by(username: params[:username]).transactions.create(
             name: params[:name],
             amount: params[:amount],
-            category: params[:category],
-            user_id: params[:user_id]
+            category: params[:category]
         )
-        transaction.to_json(include: [user: {only:[:id, :username]}])
+        transaction.to_json(include: :user) 
     end
 
     delete '/transactions/:id' do
