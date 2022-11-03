@@ -4,9 +4,9 @@ class TransactionsController < ApplicationController
         transactions = Transaction.all.to_json
     end
 
-    get "/transactions/:id" do
-        transaction = Transaction.find_by(id: params[:id])
-        transaction.to_json(include: [:user])
+    get "/transactions/:user_id" do
+        transaction = Transaction.find_by(user_id: params[:user_id])
+        transaction.to_json
     end
 
     post "/transactions" do
@@ -18,15 +18,4 @@ class TransactionsController < ApplicationController
         transaction.to_json(include: :user) 
     end
 
-    delete '/transactions/:id' do
-        transaction = Transaction.find(parms[:id])
-        transaction.destroy
-        transaction.to_json(include: [user: {only:[:id, :username]}])
-    end
-
-    patch '/transactions/:id' do
-        transaction = Transaction.find(prams[:id])
-        transaction.update(params)
-        transaction.to_json(include: [:user])
-    end
 end
