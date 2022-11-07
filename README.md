@@ -27,7 +27,7 @@ Before you continue, ensure you have met the following requirements:
 ## Getting Started
 
 Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
-* Clone this repository: `git clone https://github.com/NoahBroah/phase-3-sinatra-react-project WeSearch`
+* Clone this repository: `git clone https://github.com/NoahBroah/phase-3-sinatra-react-project`
 * Move into the project directory: `cd phase-3-sinatra-react-project`
 * Install the dependencies: `bundle install`
 * Create a new repo on GitHub: https://github.com/new
