@@ -4,6 +4,12 @@ The backend for the Timely web app
 
 ## Project Functions
 
+  - Timely is designed to be a financial tool to help users view their everyday transactions in a different view point. 
+  - Users can input their hourly rate and timely will convert their transactions amount into how much working time it took to make the purchase. 
+  - The hopes of this project is to allow users to have a better sense of money and be able to see spending habbits in a different perspective.
+
+  ## Backend Functionality
+
   - This backend was designed using Ruby with Sinatra. 
   - The function of this backend is to create a database of Users and Transactions to be stored and called upon for the Frontend of my app to have access to that data. 
   - This backend functions as the API for my phase 3 project and displays a one-to-many relationship with full CRUD capability in our Users controller. As well as Read and Create capability in the Transaction controller. 
