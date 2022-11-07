@@ -34,7 +34,7 @@ Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
     * Make sure the "Initialize this repository with a README" option is left unchecked
 * Update the remote to point to your GitHub repository: `git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME`
 * Run `bundle exec rake db:migrate` to create your schema with the correct table data.
-* Lastly you will need to input seed data to get the information you need into your API, you can do this by running `bundle exec rake db:seed` after you seed data has been put into your seed folder.
+* Lastly you will need to input seed data to get the information you need into your API, you can do this by running `bundle exec rake db:seed` after your seed data has been put into your seed folder.
 
 ### Working on the project
 
