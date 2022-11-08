@@ -10,7 +10,7 @@ class TransactionsController < ApplicationController
     end
 
     post "/transactions" do
-        transaction = User.find_or_create_by(username: params[:username]).transactions.create(
+        transaction = User.find_by(username: params[:username]).transactions.create(
             name: params[:name],
             amount: params[:amount],
             category: params[:category]
